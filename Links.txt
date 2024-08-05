@@ -1,0 +1,1361 @@
+############################################---------------------Agile---------------------------#########################################
+
+
+
+Introduction 
+
+
+Agile is a software engineering methodology followed by modern applications.
+
+
+What is Agile methodology?
+Agile methodology breaks the developmental process into iterative steps and encourages flexibility, testing, and change throughout the life cycle of a project
+
+RUP Vs Agile
+Sprint contains User Story 
+
+User Story contains Tasks
+
+Tasks estimation is done in points 
+
+One point contains 8 hours 
+
+
+Q: What is Agile? 
+
+A: Agile is a software engineering methodology followed by modern applications.
+
+note:- Agile ek software engineering methodology hai jo modern applications follow karti hain. Isme flexibility, collaboration, aur customer feedback pe focus hota hai.
+
+Q: How do you record application functionalities?
+
+A: We record (write) functionalities using User Story.  Functionalities are further divided into tasks.
+
+Q: What is Sprint?
+
+A: It is an iteration in Agile.  One application has multiple sprints.
+
+note :- Iteration is a short period of time during which a  section of work is developed and tested.
+
+Q:  What is contained by a Sprint?
+
+A:  Sprint contains User Story.
+
+
+Q:  In how many days one sprint is completed?
+
+A:  In our project sprint is for 15 days. 
+
+Q: What is done in Sprint?
+
+A: In the sprint, multiple user stories are developed.  
+
+Q: What is a User Story?
+
+A: It is a usecase that contains functionality and tasks.
+
+Note:- Task is specific piece of work within a user story that needs to be completed to achieve desired outcome.
+
+Q:  How do you estimate the time of a task?  ( One task will take how much time to complete )
+
+A:  Task is estimated in points.  One point contains 8 hours.  For example, if one task will take 24 hours to complete then the task will be completed in 3 (24/8=3) points.
+
+Q: Who is the scrum master?
+
+A: Scrum Master is basically Project Lead who follows the agile process and makes sure the team is also following the agile process.
+
+Q: Who is the product owner?
+
+A: Product owner is a Business Analyst or Sr QA engineer that has domain knowledge of the project and acts on behalf of the Client.
+
+Q: When do you have a stand-up meeting 
+
+A: Team has a stand-up meeting every morning and evening.  In the morning we have to tell what tickets/bugs we have to resolve today and evening we have to give them status. 
+
+Q: Is the client present in your stand-up meeting 
+
+A: Yes, sometimes in the morning when he has to describe new functionalities and every day in the evening stand up meeting for status.
+
+Q: What are the differences between Uasecase and User Story? 
+
+A: Both are the same.
+
+Q: What is a Sprint Retrospective?
+
+A: Sprint Retrospective ek meeting hoti hai jo sprint ke end mein conduct ki jati hai jisme team discuss karti hai ki kya acha gaya, kya improve karna hai, aur kaise process ko better kar sakte hain.
+
+The Stages of the Agile Software Development Life Cycle
+
+1.Concept
+2.Inception
+3.Construction
+4.Release 
+5.Production
+6.Retirement
+
+
+
+
+..........................................................................................................................................
+
+
+
+                                                 
+##################################################------Project Plan-------##############################################################
+
+
+
+
+Project Plan
+Project manager uses the project plan to track the project and timelines.
+
+Project contains WBS ( Work Breakdown Structure ), It contains all the tasks, their timelines, and allocated resources ( developers ). 
+
+It is created by the Project Manager using the "Microsoft Project Plan" tool.  It creates.MPP  files
+
+See Link
+
+Q: Who does create a project plan?
+
+A: Project Manager
+
+Q: Who does track the project plan?
+
+A: Project Manager
+
+Q: Why project plan is created?
+
+A: It is created to track the project by project manager. 
+
+Q: Where do you store the project plan
+
+A: Git
+
+Q: What is the extension of a project plan?
+
+A:  .mpp
+
+
+..........................................................................................................................................
+
+
+
+
+###############################################------Role and Responsibilities--------------##############################################
+
+
+
+
+Software Engineer  (Developer)
+
+I am a full stack developer, My responsibilities are to develop code, develop unit (JUnit) testcases, and peer code review.
+
+
+
+
+FAQ
+
+Q: How do you do unit testing 
+
+A: Unit testing is done by JUnit test cases.
+
+Q: What is full stack developer 
+
+A: I can write code in Angular and Spring.
+
+Q: How do you do code review?
+
+A: With the help of a code-review checklist we do code review. It is done to control quality of code.
+
+
+............................................................................................................................................................................................
+
+
+
+
+###############################################-------------Actors------------############################################################
+
+
+
+Application users are called actors.  You can identify actors by identifying roles in the application.
+
+There are two types of actors.
+
+(1) Primary Actors: who gives input to the application
+
+(2) Secondary  Actors: who takes the output from the application. Other applications that take output from the application are called secondary actors.
+
+
+Can you give examples of primary and secondary actors in a typical application scenario?
+
+Answer: Example of primary actor could be a user who logs in and submits a form. Example of secondary actor could be another system that receives data generated by the application.
+
+
+
+............................................................................................................................................................................................
+
+
+###################################################################-----------Architecture--------------------#############################################################################
+
+
+
+Q: Which architecture do you use in your application?
+
+A: We use layered architecture. 
+
+Q: What is the advantage of layered architecture?
+
+A:  All layers are independent of each other
+
+Q: Which document contains architecture information?
+A: System Architecture Document (SAD).
+
+Q: Which Spring modules do you use at the presentation layer?
+A: Spring MVC, Tiles, JSTL.
+
+Note:- 1.JSTL stands for JSP Standard Tag Library. JSTL is the standard tag library that provides tags to control the JSP page behavior
+2.
+
+Q: Which Spring modules do you use at the business layer?
+A: Spring Service, Spring Aspect-Oriented Programming (AOP).
+
+Q: Which Spring modules do you use at the data access layer?
+A: Spring ORM, Spring DAO.
+
+
+Q: How do you integrate all these layers?
+A: Spring IoC Container.
+
+Note:Its stand for inversion of control ,  manage the life cycle of java bean from instantiation to destruction and manage the dependency injection of bean.
+
+Q: Which design patterns do you use at the presentation layer?
+A:Builder, Command,  DTO, Front Control. (bcdf)
+
+Q: Which design patterns do you use at the business layer?
+A: Session Facade, Bridge, DTO.
+
+Note:-The Session Facade provides a unified and simplified interface for clients to interact with the system. Instead of interacting with multiple services and DAOs directly, the client interacts with the facade, which handles all the complexity.
+
+we have use session facade on all service class by autowired dao class.
+
+Q: Which design patterns do you use at the data access layer?
+A: DAO, Bridge, DTO.
+
+
+
+
+
+
+............................................................................................................................................................................................
+
+
+
+
+
+#######################################################-------------------Usecase Model ( .doc)----------------------#######################################################################
+
+
+It is the functional requirement of the application.  One functionality is recorded in one use-case. During the use case elaboration, the use-case team communicates to concerning actors (in-person/ conference call) and records use case flows and business rules in the MS Word doc template.
+
+The collection of use-cases is called Usecase Model.
+
+A Usecase is called User Story in  Agile methodology 
+
+Usecase Board
+One Usecase contains one functionality. It is given to developers to develop the source code.
+
+
+Usecase realization :
+
+When UML diagrams of a Usecase are created then it is called Usecase realization.
+
+FAQ
+
+1.What is Usecase?
+A:- one complete functionality is called Usecase.
+
+2.What is contained by a Usecase?
+A:-Functionality and Task.
+
+3.What is the extension of the Usecase file?
+A:-.doc
+
+4.What are the actors?
+A:- Application user are called Actors.
+
+5.How many types of Actors are there?
+A:There are two types of Actors
+1.Primary Actos
+2.Secondary Actors
+
+6.What is the difference between Basic Flow and Alternate Flow?
+A:-Basic Flow: The standard sequence of steps that occur when everything proceeds as expected. Directly access of usecase .
+Alternate Flow: Variations or exceptions to the basic flow, detailing alternative paths or handling errors and exceptions. indirectly access of usecase.
+
+7.Where do you keep your Usecases?
+A:-Usecases are typically stored in a centralized repository, such as a version control system or a shared drive, where team members can access and collaborate on them. IN GIT
+
+8.Who creates Usecases?
+A:-Sr. Software Engineer.
+
+9.What is the Usecase Model?
+A:-The collection of use-cases is called Usecase Model.
+
+10.What is the Usecase Board?
+A:-It contains list of Usecases and their brief description.
+
+11.What is Usecase realization?
+A:-When UML diagrams of a Usecase are created then it is called Usecase realization.
+
+12.What are the differences between Usecase and User story? 
+
+Ans: Both are the same
+
+
+
+
+............................................................................................................................................................................................
+
+
+
+
+#####################################################################----------------Design Model (UML)-------------------------############################################################
+
+
+
+
+FAQ
+Q: Which UML diagrams have you created in your application?
+
+A: Class diagram, Sequence diagram, Usecase diagram, and deployment diagram.
+
+
+
+Q: Which diagram is created first, class, or sequence?
+
+A: Sequence diagram.
+
+Q: How classes are identified?
+
+A: With the help of a sequence diagram?
+
+Q: How methods of classes are identified?
+
+A: Using message calls of a sequence diagram.
+
+Q: How many blocks are contained by the class diagram? What is contained by different blocks?
+
+A:  TODO 
+
+Q: Which diagram is used to eliminate unnecessary requirements?
+
+A: Usecase diagram.
+
+Q: Which diagram is used to create a table schema?
+
+A: Class diagram.
+
+Q: Which diagram does maintain time and order?
+
+A: Sequence diagram. 
+
+Q: Who does use the Deployment Diagram?
+
+A: System Engineers use the Deployment diagram.
+
+Q: What is a Node in the deployment diagram?
+
+A:  Node denotes hardware machines in the deployment diagram.
+
+Q: Who does create UML diagrams?
+
+A: Senior Developers 
+
+Q: Which tool will be used to create UML diagrams?
+
+A:  Argo UML
+
+
+
+
+
+
+1. Class Diagram
+The class diagram shows the system's structure, including classes, attributes, methods, and relationships between the classes.
+
+Class Diagram for College Management System
+
+
++---------------------+       +--------------------+       +---------------------+
+|      College        |       |      Student       |       |       Course        |
++---------------------+       +--------------------+       +---------------------+
+| - name: String      |       | - studentID: int   |       | - courseID: int     |
+| - location: String  |       | - name: String     |       | - courseName: String|
+| - courses: List     |       | - email: String    |       | - credits: int      |
++---------------------+       +--------------------+       +---------------------+
+| + getDetails()      |       | + enrollCourse()   |       | + getCourseInfo()   |
+| + addCourse()       |       | + getProfile()     |       | + updateCredits()   |
++---------------------+       +--------------------+       +---------------------+
+           |                              |
+           |                              |
+           |                              |
+           +---------- enrolls ---------->|
+           |                              |
+           +--------- offers ------------>|
+           |                              |
+           +---------- attends ---------->|
+
+
+Explanation
+
+#College: Represents the college entity with attributes like name, location, and a list of courses. It has methods to get details and add a course.
+#Student: Represents a student with attributes like studentID, name, and email. It has methods to enroll in a course and get the student's profile.
+#Course: Represents a course with attributes like courseID, courseName, and credits. It has methods to get course information and update credits.
+Relationships:
+A College offers multiple Courses.
+A Student can enroll in multiple Courses.
+A Student attends a College.
+
+
+2. Sequence Diagram
+The sequence diagram shows the order of interactions between the system's objects.
+
+Sequence Diagram for Student Enrolling in a Course
+
+
+Actor (Student)    System             Database
+    |                 |                  |
+    |  Login()        |                  |
+    |---------------> |                  |
+    |                 |  verifyLogin()   |
+    |                 |----------------->|
+    |                 |                  |
+    |                 |  loginSuccess()  |
+    |<----------------|<-----------------|
+    |                 |                  |
+    | enrollCourse()  |                  |
+    |---------------> |                  |
+    |                 |  addEnrollment() |
+    |                 |----------------->|
+    |                 |                  |
+    |                 | enrollmentAdded()|
+    |<----------------|<-----------------|
+
+
+Explanation
+Student logs into the system.
+System verifies the login with the Database.
+On successful login, the Student enrolls in a course.
+System adds the enrollment information to the Database.
+Database confirms the enrollment.
+
+3. Usecase Diagram
+The usecase diagram shows the interactions between users (actors) and the system.
+
+Usecase Diagram for College Management System
+
+
+          +-----------------------------+
+          |         College             |
+          +-----------------------------+
+          |                             |
+          |    +--------------------+   |
+          |    |                    |   |
+          |    |   Enroll Course    |<------ Student
+          |    |                    |   |
+          |    +--------------------+   |
+          |                             |
+          |    +--------------------+   |
+          |    |                    |   |
+          |    |     Login          |<------ Admin
+          |    |                    |   |
+          |    +--------------------+   |
+          |                             |
+          +-----------------------------+
+Explanation
+Student: Can enroll in courses.
+Admin: Can log into the system to manage operations.
+4. Deployment Diagram
+The deployment diagram shows the physical arrangement of hardware and software.
+
+Deployment Diagram for College Management System
+
+
++-------------+         +------------------+
+|   Client    |         |      Server      |
+|   Machine   |         |     Machine      |
++-------------+         +------------------+
+| - Browser   |         | - Web App        |
++-------------+         +------------------+
+        |                      |
+        |     HTTP Requests    |
+        +--------------------->|
+        |                      |
+        |    HTTP Response     |
+        |<---------------------+
+        |                      |
++-------------+         +------------------+
+|   Database  |         |   Backup Server  |
+|   Server    |         +------------------+
++-------------+         | - Backup DB      |
+| - SQL DB    |         +------------------+
++-------------+                |
+        |                      |
+        |     Data Backup      |
+        +--------------------->|
+Explanation
+Client Machine: Runs a web browser to access the system.
+Server Machine: Hosts the web application.
+Database Server: Stores the system's data.
+Backup Server: Regularly backs up the database data.
+
+
+
+............................................................................................................................................................................................
+
+
+
+############################################################-------------------Database model(ER)--------------#############################################################################
+
+
+
+
+
+
+
+
+The table schema is called a database model.  It is created by DBA (DataBase Administrator). 
+Database tables are derived from Class Diagrams in OOAD (Object-Oriented Analysis and Design).
+
+
+
+**Table Schema**
+                      A table schema is a blueprint that defines the structure of a database table, including the table's columns, their data types, and any constraints on the data. It specifies how the data is organized and how relationships among tables are managed.
+
+**OOAD**
+Object-Oriented Analysis and Design (OOAD) is a method for planning and creating software that focuses on using pieces of code that can be used over and over again, based on understanding what the software needs to do and how different parts of it will work together.
+
+
+**DBA**
+A Database Administrator (DBA) is an individual or person responsible for controlling, maintaining, coordinating, and operating a database management system
+
+............................................................................................................................................................................................
+
+
+
+
+
+                                                                            ##Testcase Model (.xls)##
+
+
+
+The set of Testcases is called Test-case Model.  These are xls files contains test case scenarios.Testcases are prepared by Testers (QA Engineers ) in Elaboration phase. 
+
+There are three types of test cases:
+
+**Functional Testing (FT)**: It is done manually with the help of functional test cases.
+
+**System Integration Testing (SIT)**: tests the integration of Applications with other applications or hardware. For example integration with SMS and Email servers.
+
+
+note:---"Such as integration with SMS and email servers": Yeh kuch specific integrations ke examples hain. Matlab, yeh ensure karna ki app SMS aur email servers se connect hokar properly SMS aur emails bhej aur receive kar sake.
+
+**Load Testing**: done by Load testing tools like Load Runner to test the number of concurrent users.
+
+
+Note:-  *****concurrent users refer to the number of users who are actively using a system or application at the same time***.
+
+
+
+Functional Test-cases
+
+Login Testcase
+
+User Registration Testcase
+
+User List Testcase
+
+Add User Testcase
+
+Edit User Testcase
+
+FAQ
+1.Which types of testing are done in your project?
+
+See above 
+
+2.How do you do functional testing?
+
+  Using functional test cases
+
+3.What is a functional testcase?
+
+  It is used to do functional testing.  Functional testcases are written by testers.  
+
+4.Who does functional testing?
+
+  QA Engineer 
+
+5.What is the extension of the test case?
+
+  Excel file
+
+6.Who does Unit Testing 
+
+ Unit testing is done by Developers
+
+7.How Unit testing is done?
+
+ It is done by JUnit testcases.
+
+8.Where do you store test cases?
+
+ Git
+
+9. Who writes a functional test case?
+
+ Created  by Testers (QA Engineer)
+
+10.What is stored in the functional testcase
+
+ A test case contains  
+
+ Test case Scenario 
+
+ Input Data
+
+ Preconditions 
+
+ Expected Result
+
+ Actual Result 
+
+ Status (Pass /Fail)
+
+
+Note:-  
+    
+     **Elobration Phase** --  
+                          
+                          The Elaboration phase in software development is a stage where the project's requirements and architecture are refined and detailed. During this phase, key risks are identified, and a more accurate plan and design are developed to ensure the project's feasibility and stability.
+
+
+
+
+
+
+
+............................................................................................................................................................................................
+
+
+
+
+
+                                                                                  ##--WireFrame--##
+
+
+
+
+-> Wire frame is the abstract design of User Interface. It is prepared by MS Visio kind of tool.
+
+note-"abstract design" refers to a simplified and conceptual representation of the user interface
+
+-> Wire Frame is converted into HTML Pages called HTML prototype
+
+-> HTML prototypes are  HTML pages of the application.
+
+-> HTML prototypes are prepared by HTML designer.
+
+
+
+
+
+
+### Keywords Explained
+
+1. **Wireframe**
+   - **Definition**: A wireframe is a visual guide that represents the skeletal framework of a user interface. 
+   - **Purpose**: It outlines the basic structure and layout of a web page or app, including elements like buttons, menus, and content areas.
+   - **Tools Used**: Wireframes are typically created using tools like MS Visio, Adobe XD, Figma, Balsamiq, or Sketch.
+
+2. **HTML Prototype**
+   - **Definition**: An HTML prototype is a fully functional version of a website or application that is built using HTML, CSS, and sometimes JavaScript. 
+   - **Purpose**: It allows designers and developers to test and refine the user interface and user experience before the final development.
+   - **Creator**: HTML prototypes are usually created by HTML designers or front-end developers.
+
+3. **HTML Designer**
+   - **Role**: An HTML designer is responsible for creating the visual layout of web pages using HTML, CSS, and other web technologies.
+   - **Skills Required**: Knowledge of HTML, CSS, JavaScript, graphic design tools, and often user experience (UX) principles.
+
+### Interview Questions for a Software Developer Position
+
+1. **Understanding Wireframes and Prototypes**
+   - **Question**: What is a wireframe, and how does it differ from an HTML prototype?
+   - **Expected Answer**: A wireframe is a visual guide that outlines the basic structure of a user interface without detailing design elements. An HTML prototype, on the other hand, is a functional version of the UI built using HTML and CSS, allowing for interactive testing and refinement.
+
+2. **Tools and Skills**
+   - **Question**: What tools do you use to create wireframes and prototypes? 
+   - **Expected Answer**: For wireframes, I use tools like MS Visio, Balsamiq, or Figma. For HTML prototypes, I use HTML, CSS, and JavaScript, along with development environments like Visual Studio Code or Sublime Text.
+
+3. **Role Differentiation**
+   - **Question**: Explain the role of an HTML designer in the development process.
+   - **Expected Answer**: An HTML designer is responsible for translating wireframes and visual designs into functional HTML prototypes. They focus on the layout, styling, and sometimes the initial interactivity of web pages, working closely with UX designers and developers to ensure the prototype aligns with the intended user experience.
+
+4. **Prototype Usage**
+   - **Question**: How are HTML prototypes used in the development lifecycle?
+   - **Expected Answer**: HTML prototypes are used to test and validate the user interface and experience early in the development process. They allow stakeholders to provide feedback and make adjustments before moving to full-scale development, thereby reducing the risk of significant changes later.
+
+5. **Challenges**
+   - **Question**: What challenges might you face when creating an HTML prototype, and how would you address them?
+   - **Expected Answer**: Challenges can include ensuring cross-browser compatibility, maintaining design consistency, and optimizing performance. To address these, I would use responsive design techniques, regularly test on different devices and browsers, and adhere to best practices for HTML and CSS coding.
+
+6. **Collaboration**
+   - **Question**: How do you collaborate with UX designers and developers when working on wireframes and prototypes?
+   - **Expected Answer**: I collaborate with UX designers to understand the user flow and design intent, and with developers to ensure feasibility and smooth transition from prototype to final development. Regular meetings, feedback sessions, and using version control systems like Git help facilitate this collaboration.
+
+These questions and explanations will help you understand the significance of wireframes and HTML prototypes in the software development process and prepare you for related interview topics.
+
+
+
+
+............................................................................................................................................................................................
+
+
+
+
+
+                                                                                             Source Code
+
+note- 1. Staging lets you review what will be included in the next commit.
+
+
+
+1: Where do you store your source code?
+
+A: Git.
+
+2: What is check-out of code?
+
+A:  We update the local copy of source code from GIT, it is called check-out.  Check out is done using git pull command.
+
+3: What is the check-in of code?
+
+A:  We store modified code back to the code it is called check-in.  Check-in is done using git push command.
+
+4: What is the GIT clone?
+
+A:  First time when we get a local copy of the project from git then it is called cloning.
+
+Cloning is done using git clone command.
+
+5: How do you maintain the version of your source code?
+
+A:  Git.
+
+6: Which expert classes have you created in your application?
+
+A: All classes we have created in our application are expert classes. We have created controller, service, and dao classes in our application.
+
+7: Which non-expert classes have you created in your application?
+
+A: None, all classes are expert class because we do encapsulation that creates expert classes.
+
+8 Which classes have you created in your application?
+
+A: We have created Controller, Service, and DAO classes.
+
+9 What are the responsibilities of Controller classes?
+
+A: It contains navigation logic.
+
+10. What are the responsibilities of Service classes?
+
+A: It contains business logic and does transaction handling.
+
+11 What are the responsibilities of DAO classes?
+
+A: It contains data access logic.
+
+12 What is the version of a file?
+
+A: Every time when you check in the updated file, it creates new versions of the file and keeps the old version of the file.  N number of check-ins will create N versions.
+
+
+
+git add, git commit, and git push are fundamental commands in Git, a version control system. 
+
+13: What are git add, git commit and git push commands?
+
+[1]git add: It adds new files to local repository for the next commit. 
+
+git add file1.txt       # Stage a specific file
+
+git add .               # Stage all changes in the working directory
+
+[2]git commit: It commits changes to local repository with comments 
+
+git commit -m "Added feature X"      # Commit changes with a commit messags
+
+[3]git push: This command is used to upload local repository commits to a remote repository.
+
+git push origin master      # Push commits to the 'master' branch of the remote repository named 'origin'
+
+
+
+
+
+### Features of Git
+
+- **Distributed Version Control System (DVCS)**
+- **Branching and Merging**
+- **Lightweight and Fast**
+- **Data Integrity**
+- **Staging Area**
+- **Support for Non-linear Development**
+- **Efficient Handling of Large Projects**
+- **Collaborative Workflow**
+- **History and Version Tracking**
+- **Integration with Various Tools and Services**
+- **Open Source**
+- **Local Repository Support**
+- **Commit History and Logs**
+- **Undoing Changes and Reverting Commits**
+- **Customizable Hooks and Scripts**
+- **Tagging Releases**
+- **GPG Signatures for Commits**
+- **Efficient Network Operations**
+- **Support for Multiple Protocols (HTTPS, SSH, etc.)**
+- **Submodule Support**
+
+
+
+
+Assume you have a remote repository with updates in the main branch and you want to pull those updates into your local repository:
+
+
+Note:- **checkout command** -------git checkout -b <branch-name>    When used with git checkout, -b instructs Git to create a new branch if it doesn't already exist and then immediately switch to that branch.
+
+   
+**merge command** ---- git merge <branch-name>
+
+steps to merge a branches**
+1. Make repository , clone into desktop 
+2.Paste a file into it 
+3.Run push commands
+4.Make a new branch ->click main -> click on new branch
+5.again paste a java file 
+6. run git checkout -b <branch-name> command to switch the branch
+7. then run push commands
+8. go to repository
+9. click on contribute -> open pull request -> create pull request -> merge pull request - done 
+
+Interview Question---
+
+
+Basic Concepts
+
+Question: What is the purpose of using branches in Git?
+Expected Answer: Branches allow developers to work on separate features or fixes without affecting the main codebase. They enable parallel development and help in managing different versions of the project.
+Commands and Usage
+
+Question: How do you create a new branch and switch to it?
+Expected Answer: You can create and switch to a new branch using the command git checkout -b <branch-name>.
+Staging and Committing
+
+Question: What is the difference between git add and git commit?
+Expected Answer: git add stages changes, preparing them to be committed, while git commit saves those staged changes to the local repository with a commit message.
+Push and Pull
+
+Question: Explain the difference between git push and git pull.
+Expected Answer: git push uploads local changes to the remote repository, while git pull fetches and merges changes from the remote repository into the local repository.
+Pull Requests and Code Review
+
+Question: What is a pull request, and why is it important?
+Expected Answer: A pull request is a way to propose changes to the codebase. It allows team members to review, discuss, and approve changes before merging them, ensuring code quality and collaboration.
+Merging Conflicts
+
+Question: How do you handle merge conflicts in Git?
+Expected Answer: Merge conflicts occur when changes from different branches conflict. They can be resolved by manually editing the conflicting files and then staging and committing the resolved changes.
+
+
+
+
+
+Let's break down the command git push origin master step by step:
+
+**git**: This is the command-line interface for Git, a distributed version control system. Git allows multiple developers to work on a project simultaneously without interfering with each other's work.
+
+**push**: This is a Git command used to upload local repository content to a remote repository. When you make changes to your code locally and commit them, the changes are saved only on your local machine. The push command sends those changes to a remote repository so that others can access them.
+
+**origin**: This is the name of the remote repository to which you want to push your changes. When you clone a repository, Git automatically names the remote repository you cloned from as origin. You can have multiple remote repositories, each with a different name, but origin is the default name given to the primary remote repository.
+
+**master**: This is the name of the branch you want to push your changes to. In Git, branches are used to develop features, fix bugs, or safely experiment with new ideas. The master branch is the default branch created when you initialize a new repository. However, it's worth noting that many projects have transitioned to using main as the default branch name instead of master.
+
+So, when you run git push origin master, you are telling Git to send the commits from your local master branch to the master branch of the remote repository named origin.
+
+
+
+............................................................................................................................................................................................
+
+
+
+
+
+
+
+
+                                                                                           **Artifacts**  
+
+
+**Project Artifacts**
+
+Project documents are referred to as project artifacts. Some are one-time documents, while others are created for each functionality.
+
+One-Time Documents:
+
+1.Project Plan (.mpp):
+
+   Created by: Project Manager
+   Description: Outlines the project schedule and milestones.
+
+2.System Architecture Document (.doc):
+
+  Created by: Technical Architect
+  Description: Contains details of the application's architecture.
+
+3.Java Coding Guideline (.doc):
+
+  Created by: Technical Lead
+  Description: Provides coding standards for Java.
+
+4.Project Coding Guideline (.doc):
+
+  Created by: Technical Lead
+  Description: Specifies coding standards for the project based on its architecture.
+
+5.Code Review Checklist (.xls):
+
+  Created by: Technical Lead
+  Description: Ensures adherence to coding guidelines; used for code reviews by peer developers.
+
+6.Proof Of Concept (POC):
+
+  Developed by: Project Lead with help from the Architect
+  Description: Source code implementation of a critical use case, approved by the client, and used as a reference for other use cases.
+
+
+Documents fiven to Developers for New Functionality:
+
+1.Use Case Document (User Story):
+Description: Details the functionality to be implemented.
+
+2.UML Diagrams (Sequence and Class):
+Description: Visual representations of the system's structure and behavior.
+
+3.Database Model (Table Schema):
+Description: Defines the database structure.
+
+4.HTML Prototype (HTML Page or Wireframe):
+Description: Visual representation of the user interface.
+
+
+FAQ
+
+Q1: What are artifacts?
+A1: Project documents are artifacts.
+
+Q2: When new functionality is assigned to you, which artifacts will be given to you?
+A2: Use case document (User Story), UML Diagrams (Sequence and Class), Database Model (Table Schema), HTML Prototype (HTML page or Wireframe).
+
+Q3: How do you control the quality of code?
+A: With the help of a code review.
+
+Q4: How do you do a code review?
+A: With the help of a code review checklist.
+
+Q5: What is the extension of the code review checklist?
+A: It is an Excel file (.xls).
+
+Q6: Where do you store all the above artifacts?
+A: In GIT, a code versioning tool.
+
+Q7: How do you get all these documents?
+A: From GIT.
+
+Q8: What is the POC?
+A: Proof Of Concept (POC) is the source code implementation of a critical use case, developed by the Project Lead with help from the Architect. It is approved by the client and used as a reference by all developers to develop code for other use cases.
+
+
+
+**JAVA CODING GUILDLINE**
+
+Naming convention :-Naming convention is a rule to name your identifiers. An identifier is a name of class, package, variable, constant or method. It helps us to distinguish variables, constants, methods, and classes in large source code written by developers.
+
+
+Packages- lower Case
+CLasses:-CamelCAse
+Interface-:Camel CAse
+Methods; first Latter  should start with small latter father it follow  Camel case
+
+
+
+
+**Project Coding GuildLine**
+
+1. DTO :- 
+
+->DTO are POJO
+->DTO extend BaseDTO
+->One DTO is created one table
+-> Attribute ID will be used as a non business primary key
+
+Note: POJO ---does not follow any special conventions or frameworks and is not bound by any specific Java model.
+
+2.DAO : 
+
+->DAO will contain data access logic
+->CRUD Operation 
+->@Repository
+
+3. Service :
+
+-> @Service
+->Contain business logic and perform business operation
+->Dao Autowired in service
+->transaction handling
+->Service will sperate into interface and implementation
+
+
+
+4.Controller:-
+
+->@Controller
+->Navigation logic 
+->contain :- display submit logic
+->Validation -: with the help of @Valid annotation
+
+5.Form bean :-
+
+->POJO class designed as per view
+->one form contain one view
+->extend BaseForm
+
+6. View :-
+
+->Contain display logic
+->spring tag will be used to display i18N MESSAGE
+
+
+
+***Code Review Checklist(.xls)****
+
+
+->Its  created on the basis of project coding guideline
+->It make sure developer follow project coding   guideline in this way it controller code 
+->Used to do code review
+-> list ---
+           
+
+
+### Code Review Checklist for "Online Result System"
+
+| **Category**         | **Checklist Item**                                      | **Description**                                                               | **Status**       |
+|----------------------|---------------------------------------------------------|-------------------------------------------------------------------------------|------------------|
+| **Code Structure**   | Code is modular                                         | Ensure user module code is organized into logical components/services         | [ ]              |
+|                      | Code is readable                                        | Ensure user module code is easy to read and understand                        | [ ]              |
+|                      | Proper naming conventions                               | Ensure variables, functions, classes, etc. are named appropriately             | [ ]              |
+| **Functionality**    | Code meets requirements                                 | Ensure user module meets specified requirements (e.g., registration, login)    | [ ]              |
+|                      | No redundant code                                       | Ensure there is no duplicate or unnecessary code                              | [ ]              |
+| **Performance**      | Efficient algorithms                                    | Ensure algorithms used are efficient (e.g., for user data processing)          | [ ]              |
+|                      | Resource management                                     | Ensure proper management of resources (e.g., memory, sessions)                | [ ]              |
+| **Security**         | Input validation                                        | Ensure all user inputs are validated (e.g., during registration, login)        | [ ]              |
+|                      | Secure coding practices                                 | Ensure code follows secure coding guidelines (e.g., password encryption)       | [ ]              |
+| **Error Handling**   | Proper error handling                                   | Ensure errors are handled gracefully and logged appropriately                 | [ ]              |
+|                      | No silent failures                                      | Ensure there are no failures that go unreported                               | [ ]              |
+| **Documentation**    | Code comments                                           | Ensure user module code is well-commented                                     | [ ]              |
+|                      | Documentation updated                                   | Ensure any relevant documentation is updated                                  | [ ]              |
+| **Testing**          | Unit tests                                              | Ensure unit tests are provided for user module code                           | [ ]              |
+|                      | Passes existing tests                                   | Ensure user module code passes all existing tests                             | [ ]              |
+|                      | New tests are added for new functionality               | Ensure new tests are added for any new functionality in user module           | [ ]              |
+| **Compliance**       | Follows coding standards                                | Ensure code follows the established coding standards                          | [ ]              |
+|                      | Follows design patterns                                 | Ensure code follows the established design patterns                           | [ ]              |
+| **Deployment**       | Deployment scripts                                      | Ensure deployment scripts for user module are updated if necessary            | [ ]              |
+|                      | Configuration files                                     | Ensure configuration files related to user module are updated if necessary    | [ ]              |
+| **Frontend (Angular)**| Proper component structure                             | Ensure Angular components for user module are well-structured                 | [ ]              |
+|                      | State management                                        | Ensure state management is handled correctly (e.g., using NgRx)               | [ ]              |
+|                      | Responsive design                                       | Ensure UI for user module is responsive and works well on different devices   | [ ]              |
+|                      | Form validation                                         | Ensure form validations are implemented properly in the user module           | [ ]              |
+
+
+
+
+
+
+
+
+
+
+
+Additional Questions for Interview Preparation
+Q9: Sprint planning kya hota hai?
+A9: Sprint planning ek meeting hoti hai jahan team next sprint ke liye kaam plan karti hai. Ismein user stories ko select karke unhe detailed tasks mein break kiya jata hai.
+
+Q10: Version control kyun zaroori hai?
+A10: Version control code changes ko track karne, multiple contributors ke beech conflicts avoid karne, aur previous versions ko restore karne ke liye zaroori hai.
+
+Q11: Continuous Integration (CI) kya hota hai?
+A11: Continuous Integration (CI) ek practice hai jahan developers apna code frequently integrate karte hain, har integration automated build aur tests se verify kiya jata hai taaki errors jaldi pakde ja sakein.
+
+Q12: Agile methodology kya hai?
+A12: Agile ek iterative aur incremental approach hai software development ke liye, jo collaboration, customer feedback, aur rapid releases par focus karta hai.
+
+Q13: Refactoring kya hota hai?
+A13: Refactoring code ko change karna bina uske external behavior ko change kiye, taaki code cleaner, more efficient, aur maintainable ho sake.
+
+
+
+............................................................................................................................................................................................
+
+
+
+
+
+
+
+**Application Environment**
+
+  
+When deploying an application, there are typically several distinct environments used throughout the development and release process. These environments serve different purposes and ensure that the application is thoroughly tested and stable before being released to end users. The number of environments can vary depending on the complexity and requirements of the project, but the most common ones include:
+
+﻿
+
+﻿
+
+**Deployment Environments Overview**
+
+1.Development Environment (DEV)=>
+
+  Purpose: Used by developers for writing and testing code.
+  Characteristics: Frequent changes, debugging tools enabled.
+                   The developer develops source code in this environment, It is created at the Developer's desktop machine. Log4J has message-level debug
+
+2.Integration Environment=>
+  Purpose: Integrate and test code from different developers.
+  Characteristics: Merged code, integration tests. 
+
+3.Testing Environment (TEST)=>
+  Purpose: Verify the application against requirements.
+  Characteristics: Stable, controlled, contains test data, supports various testing types.
+  *The build is deployed in QA Environment. Testers perform Functional Testing in this environment. Log4J has message level info
+
+4.Staging Environment (STAGE)=>
+  Purpose: Final check before production.
+  Characteristics: Mirrors production, used for UAT, stable with production-like data.
+
+5.Production Environment (PROD)=>
+
+  Purpose: Live environment for end users.
+  Characteristics: Highly stable, real user data, minimal downtime.
+  This is a live server. End-user (Live users) access this server. Log4J has message level warn
+
+6.Disaster Recovery Environment (DR)=>
+
+Purpose: Backup for production failures.
+Characteristics: Identical to production, used for failover testing.
+
+7.Performance Testing Environment
+
+Purpose: Test performance and scalability.
+Characteristics: Simulates high load, mirrors production configuration.
+
+8.Sandbox Environment
+
+Purpose: Experimentation and POC testing.
+Characteristics: Isolated, used for trying new features.
+
+﻿
+
+﻿
+
+Summary
+
+While the above environments are common, not every project will use all of them. Smaller projects might combine some environments (e.g., integrating testing and staging), while larger, more complex projects might have additional specialized environments. The key is to have a well-defined process that ensures code is thoroughly tested and stable before reaching the production environment.
+
+FAQ
+
+Q: What is the purpose of the Development Environment (DEV)?
+A: It is used by developers for writing and testing the code.
+
+Q: What is the Integration Environment used for?
+A: It integrates and tests code from different developers, often including integration tests.
+
+Q: What happens in the Testing Environment (TEST)?
+A: It verifies the application against requirements with stable, controlled conditions, and contains test data for various testing types. Here QA Engineers used to do the testing.
+
+Q: What is the Staging Environment (STAGE) for?
+A: It serves as a final check before production, mirroring the production environment and used for user acceptance testing (UAT).
+
+Q: What characterizes the Production Environment (PROD)?
+A: It is the live environment for end-users, highly stable with real user data and minimal downtime.
+
+Q: What is the Disaster Recovery Environment (DR)?
+A: It acts as a backup in case of production failures, identical to production for failover testing.
+
+Q: Why is the Performance Testing Environment important?
+A: It tests the performance and scalability of the application, simulating high-load conditions.
+
+Q: What is the Sandbox Environment used for?
+A: It is for experimentation and proof-of-concept (POC) testing, isolated from other environments.
+
+Q: How is Log4J configured in the Development Environment?
+A: Log4J is set to message-level debug.
+
+Q: What logging level does Log4J use in the QA Environment?
+A: Log4J is set to message-level info.
+
+Q: What logging level does Log4J use in the Production Environment?
+A: Log4J is set to message-level warn.
+
+
+
+
+
+FAQ in Hinglish
+Q: Development Environment (DEV) ka purpose kya hai?
+A: Developers isse code likhne aur test karne ke liye use karte hain.
+
+Q: Integration Environment kis liye use hoti hai?
+A: Yeh alag-alag developers ke code ko integrate aur test karne ke liye use hoti hai, jismein aksar integration tests bhi shamil hote hain.
+
+Q: Testing Environment (TEST) mein kya hota hai?
+A: Yeh environment requirements ke against application ko verify karta hai, stable aur controlled conditions mein. Ismein test data hota hai aur yahan QA Engineers testing karte hain.
+
+Q: Staging Environment (STAGE) kis kaam aata hai?
+A: Yeh production ke pehle final check ke liye hota hai, jo production environment ka mirror hota hai aur user acceptance testing (UAT) ke liye use hota hai.
+
+Q: Production Environment (PROD) ki kya khasiyat hoti hai?
+A: Yeh live environment hota hai jahan end-users use karte hain, highly stable hota hai, real user data ke saath aur minimal downtime hota hai.
+
+Q: Disaster Recovery Environment (DR) kya hai?
+A: Yeh production failures ke case mein backup ka kaam karta hai, production jaisa identical hota hai aur failover testing ke liye use hota hai.
+
+Q: Performance Testing Environment kyun important hai?
+A: Yeh application ki performance aur scalability test karne ke liye hoti hai, high-load conditions ko simulate karti hai.
+
+Q: Sandbox Environment kis liye use hoti hai?
+A: Yeh experimentation aur proof-of-concept (POC) testing ke liye hoti hai, aur doosre environments se isolated hoti hai.
+
+Q: Development Environment mein Log4J kaise configure hota hai?
+A: Log4J ko message-level debug par set kiya jata hai.
+
+Q: QA Environment mein Log4J ka logging level kya hota hai?
+A: Log4J ko message-level info par set kiya jata hai.
+
+Q: Production Environment mein Log4J ka logging level kya hota hai?
+A: Log4J ko message-level warn par set kiya jata hai.
+
+Additional Questions for Interview Preparation
+Q9: DevOps kya hota hai aur iska purpose kya hai?
+A9: DevOps ek set of practices hai jo software development aur IT operations ko combine karta hai, taaki systems development life cycle ko automate aur streamline kiya ja sake.
+
+Q10: Configuration Management kya hota hai?
+A10: Configuration Management ek process hai jo software aur hardware configurations ko systematically handle karta hai, changes ko track karta hai aur consistency maintain karta hai.
+
+Q11: Continuous Deployment (CD) kya hai?
+A11: Continuous Deployment (CD) ek process hai jahan code changes automatically production environment mein deploy ho jate hain, bina manual intervention ke.
+
+Q12: Load Testing aur Stress Testing mein kya farq hai?
+A12: Load Testing application ki performance ko normal aur peak load conditions mein measure karta hai, jabki Stress Testing system ko maximum capacity se zyada load dekar test karta hai taaki breakpoints aur robustness ko assess kiya ja sake.
+
+Q11: Continuous Integration (CI) kya hota hai?
+A11: Continuous Integration (CI) ek practice hai jahan developers apna code frequently integrate karte hain, har integration automated build aur tests se verify kiya jata hai taaki errors jaldi pakde ja sakein.
+
+
+
+............................................................................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+**Build Process**
+
+  
+->What is a Build?
+A build is the compiled code of an entire application.
+
+->Who Creates the Build?
+The Deployment Lead is responsible for creating the build.
+
+->Build Frequency
+The build is created fortnightly, every 15 days.
+
+->Build Creation Tool
+The build is created using Maven, resulting in a .WAR file. WAR stands for Web Archive.
+
+Deployment
+
+*The .WAR file is deployed in the QA Environment.
+*It is copied to the /deploy folder in JBoss.
+
+**Versioning**
+Each build is assigned a version number.
+
+Release Notes
+A release note document is created after each build, which includes:
+
+     Build Version Number
+     List of Working Functionality
+     List of Resolved Bugs
+     List of Open Bugs
+
+
+﻿
+
+﻿
+
+
+FAQs on Build Process
+
+Q: What is a build?
+A: A build is the compiled code of the entire application.
+
+Q: Who creates the build?
+A: The Deployment Lead.
+
+Q: How do you create your build?
+A: Using Maven.
+
+Q: What is the extension of the build file?
+A: The extension is .jar. It is a microservice.
+
+Note:- A microservice is a small, independent service that performs a specific function within a larger application.
+
+**Difference between jar and war**
+   .war: Deployed to a server, which manages the application lifecycle.
+   .jar: Executed independently, managing its own lifecycle.
+
+Q: On which server and directory do you deploy the build?
+A: We start our microservice from the jar file.
+
+Q: What is the frequency of your build?
+A: Every 7 days.
+
+Q: What is the release note?
+A: A release note is a document created after each build that includes:
+
+  ->Build Version Number
+  ->List of Working Functionality
+  ->List of Resolved Bugs
+  ->List of Open Bugs
+
+Q: Who creates a release note?
+A: The Deployment Lead.
+
+
+
